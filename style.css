@@ -1,0 +1,449 @@
+
+*,*::before,
+*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+
+}
+body,html{
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+
+}
+:root{
+  --primary-color:#d37c35;
+  --black-color:#000000;
+  --white-color:#FFFFFF;
+  --light-blue: #E7ECFF;
+  --light-grey:#D9D9D9;
+  --dark-grey:#413d3d;
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --transition-3: 1s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+
+    /**
+   * gradient color
+   */
+
+   --gradient: linear-gradient(to right, transparent 50%, var(--white_30) 100%);
+
+   /**
+    * typography
+    */
+ 
+   --ff-urbanist: 'Urbanist', sans-serif;
+ 
+   --fs-1: 4.8rem;
+   --fs-2: 4rem;
+   --fs-3: 3.4rem;
+   --fs-4: 2.4rem;
+   --fs-5: 2rem;
+   --fs-6: 1.8rem;
+   --fs-7: 1.5rem;
+   --fs-8: 1.4rem;
+   --fs-9: 1.3rem;
+ 
+   --fw-400: 400;
+   --fw-500: 500;
+   --fw-600: 600;
+   --fw-700: 700;
+   --fw-800: 800;
+ 
+   /**
+    * spacing
+    */
+ 
+   --section-padding: 35px;
+ 
+   /**
+    * shadow
+    */
+ 
+   --shadow-1: 0 8px 16px var(--black_15);
+   --shadow-2: 0 4px 10px var(--black_5);
+ 
+   /**
+    * radius
+    */
+ 
+   --radius-3: 3px;
+ 
+
+}
+.fa-user:hover,
+.fa-shopping-cart:hover,
+.fa-shipping-fast:hover{
+color: #d37c35!important;
+}
+.paragraph{
+  color: var(--dark-grey);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.animate__zoomIn {
+  animation-duration: 5s !important; 
+}
+embed,iframe,img,object{max-width: 100%;}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a, 
+a:active,
+a:hover,
+a:focus,
+button{
+  text-decoration: none;
+  outline: 0;
+}
+a
+{
+  color: var(--black-color);
+  text-transform: uppercase;
+}
+.hover-text:hover{
+  color: var(--primary-color)!important;
+}
+/* section{
+  padding: 2.5rem 0!important;
+} */
+.section-title{
+font-size: 2.5rem!important;
+  font-weight: 300;
+  line-height: 36px;
+  color: var(--black-color);
+  text-transform:uppercase;
+  margin-bottom: 0.8rem;
+  letter-spacing: 15px;
+
+
+}
+.section-subheading{
+  font-size: 1.5rem!important;
+  font-weight: 300;
+  line-height: 34px;
+  color: var(--black-color);
+  text-transform:uppercase;
+  margin-bottom: 0.8rem;
+  letter-spacing: 15px;
+}
+
+.section-subtitle{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;  
+}
+.sub-heading-dropdown-divider{
+    color:var(--primary-color)!important;
+    font-weight: 900!important;
+    border: 2px solid var(--primary-color);
+    width: 60%;
+}
+
+.main-btn{
+    color:#000;
+    padding: 15px 30px;
+    line-height: 21px;
+    font-weight: 500;
+    transition: 0.3s all;
+    border: 0.2rem solid var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    }
+    .main-btn:hover{
+        background: var(--black-color);
+        color:var(--primary-color);
+        border: 0.2rem solid var(--black-color);
+      
+    }
+    .sec-btn
+    {
+     color:var(--primary-color);
+    padding: 10px 15px;
+    line-height: 21px;
+    font-weight: 500;
+    transition: 0.3s all;
+    border: 0.2rem solid var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+
+    }
+    .sec-btn:hover{
+      background: var(--primary-color);
+      color:var(--black-color);
+      border: 0.2rem solid var(--primary-color);
+    
+  }
+  .third-btn
+  {
+   color:var(--primary-color);
+  padding: 10px 15px;
+  line-height: 21px;
+  font-weight: 500;
+  transition: 0.3s all;
+  border: 0.2rem solid var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  background: var(--black-color);
+
+  }
+  .third-btn:hover{
+    background: var(--black-color);
+    color:var(--primary-color);
+    border: 0.2rem solid var(--black-color);
+  
+}
+
+
+/* =====navbar styling======= */
+.navbar-brand{
+    letter-spacing: 4.5px;
+    font-weight: 400;
+}
+.gift-icon {
+    color:orange;
+}
+.navbar-nav .nav-item a.nav-link {
+    text-transform: uppercase !important;
+    color: #000;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+}
+/* Add this to your existing CSS */
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+.navbar {
+    border-bottom: 2px solid #ccc;
+  }
+.navbar-nav .nav-item:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Change the color as needed */
+}
+.navbar-nav .dropdown-menu{
+    text-transform: uppercase;
+    transition: 1s;
+    opacity: 1;
+    color: grey!important;
+}
+.dropdown-menu .dropdown-item:hover{
+    color: #000!important;
+    font-weight: 400!important;
+    
+}
+.close{
+    color: #000;
+    padding: 4px 8px;
+}
+.banner-section .carousel-inner .carousel-item img{
+height: 100vh;
+min-height: 300px;
+background-size:center;
+-webkit-background-size:cover;
+}
+.banner-section .carousel-inner .carousel-item::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))!important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+}
+
+/*=== new Arrival start===*/
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.card:hover .overlay-image {
+  display: flex;
+ transition: opacity 2.3s ease-in-out;
+ scale: 1.1;
+}
+
+.overlay-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-img-top {
+  height: 250px; 
+  object-fit: cover; 
+}
+.view-all-button {
+  position: relative;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*=== new Arrival end ===*/
+
+/*========= hair banner ========= */
+.Hair {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/pins/pin3.jpg') ;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-box {
+  background-color: white;
+  text-align: center;
+  height: 40vh;
+  width: 30%;
+}
+
+.banner-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn:hover{
+  background:#fff!important;
+   color:#000!important;
+   border: 0.2rem solid var(--black-color);
+    }
+    
+    
+/* -------new arival pagination ----- */
+.pagination .page-item a{
+      color: #000!important;
+      padding: 10px 20px;
+}
+.scrollbar-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.shop-card .action-btn {
+  background-color: #fff!important;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.shop-card .card-actions {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  display: grid;
+  gap: 10px;
+  opacity: 0;
+  transition: var(--transition-2);
+}
+
+.shop-card .action-btn {
+  background-color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+  border: none!important;
+}
+
+.shop-card .action-btn:is(:hover, :focus) {
+  background-color: #000!important;
+  color: #fff;
+}
+
+.shop-card:is(:hover, :focus-within) .card-actions {
+  opacity: 1;
+  transform: translate(-20px, -50%);
+}
+
+.shop-card .card-content {
+  padding-block: 20px;
+  text-align: center;
+}
+
+.shop-card :is(.price, .card-rating, .rating-wrapper) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.card-body .card-title:is(:hover, :focus) {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.shopping-cart  .product_name{
+  font-size: 20px!important;
+  letter-spacing: 1.5px!important;
+
+}
+
+/* refund  */
+
+ .highlight {
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffeeba;
+  margin-bottom: 20px;
+}
+
+
+.footer-list a{
+  color: var(--primary-color)!important;
+}
+
+.footer-list a:hover{
+  color: #fff!important;
+}
+
+
